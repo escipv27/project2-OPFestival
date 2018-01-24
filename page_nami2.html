@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>  온리전 自給自足</title>
+	<meta name="viewport" content="width=device-width, width=1280" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="No-Cache" />
+
+
+	<meta name="keywords" content=" ,   온리전,   동인 행사, 원온, 자급자족, 원온 자급자족, 주말농장" />
+	<meta name="description" content="2016.08.06 제2회   온리전 自給自足 공식 홈페이지" />
+
+
+	<link rel="shortcut icon" href="">
+
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="fonts/fonts_kr.css">
+
+	<link rel="stylesheet" type="text/css" href="oneon.css?10">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+
+	<script src="oneon_main.js?10"></script>
+	<script src="oneon_login.js?10"></script>
+	<script src="oneon_join.js?10"></script>
+	<script src="oneon_user.js?10"></script>
+	
+
+</head>
+
+<body>
+<div class="preload">
+	<img src="img/bg/thetreebg.png" width="1" height="1">
+	<img src="img/bg/thewheelbg.png" width="1" height="1">
+	<img src="" width="1" height="1">
+	<img src="" width="1" height="1">
+	<img src="" width="1" height="1">
+</div>	
+
+<div id="contents"> <!-- always here -->
+	
+	<div id="page"> <!-- always here / it will be the target for page substitutting -->
+		
+		<div id="page_nami" class="subpage">
+
+			<!-- subpage HEADER -->
+			<div id="userheader" class="green">
+				<a href="#" id="ushd_home" class="toMAIN">자급자족</a>
+				<a href="#" id="ushd_mypage" class="ushd_link grn ushdtoMyPage sel">개인 페이지</a>
+				<a href="#" id="ushd_booth" class="ushd_link pnk ushdtoBooth">부스 참가 전용</a>
+				<a href="#" id="ushd_portrait" class="ushd_link grn ushdtoPortrait">등신대 협력 전용</a>
+				<a href="#" id="ushd_tcard" class="ushd_link pnk ushdtoTCard">트레카 협력 전용</a>
+				<a href="#" id="ushd_illust" class="ushd_link grn ushdtoIllust">일러 전시 참가 전용</a>
+
+			</div>
+			<!-- end of subpage HEADER -->
+			
+
+			<div id="box_user">				
+				
+				<div id="user_info_box">
+					<div id="userinfo_title"><span id="userinfo_title_name"></span> 님의 참가 신청 정보 입니다.</div>
+
+					<div id="userinfo_category" class="userinfo_block">
+						<span class="userinfo_block_title">참가 신청 항목</span><br>
+
+						<span class="userinfo_item_name">부스</span> <span class="userinfo_item_text" id="ui_view_cat_booth">미신청</span><br>
+						<span class="userinfo_item_name">등신대</span> <span class="userinfo_item_text" id="ui_view_cat_portrait">미신청</span><br>
+						<span class="userinfo_item_name">트레카</span> <span class="userinfo_item_text" id="ui_view_cat_tcard">미신청</span><br>
+						<span class="userinfo_item_name">일러전시회</span> <span class="userinfo_item_text" id="ui_view_cat_illust">미신청</span><br>
+					</div>
+
+
+					<div id="userinfo_basic" class="userinfo_block">
+					<div id="userinfo_basic_modify_form">
+						<span class="userinfo_block_title">공통항목</span><a href="#" id="userinfo_modify_basic_confirm" class="userinfo_modify_btn_c">확인</a> <a href="#" id="userinfo_modify_basic_cancel" class="userinfo_modify_btn_c">취소</a><br>
+						<form id="form_modify_basic">
+							<span class="userinfo_item_name">닉네임</span><input type="text" name="basic_name" class="form_textbox form_doublecheck"><a href="#" id="form_dc_m_basic_name" class="form_doublecheck_link">중복확인</a><br>
+							<span class="userinfo_item_name">생년월일</span> <span class="userinfo_item_text" id="ui_view_mod_basic_birthdate"></span><br>
+							<span class="userinfo_item_name">연락처</span> <input name="basic_contactphone" class="form_textbox input_number_only"><br>
+							<span class="userinfo_item_name">이메일</span> <span class="userinfo_item_text" id="ui_view_mod_basic_contactemail"></span><br>
+							<span class="userinfo_item_name">비밀번호</span> <input type="text" name="basic_password" class="form_textbox input_nonkorean_only"><br>
+
+							<span class="userinfo_item_name">집주소</span> <input type="text" name="basic_homeaddress" class="form_textbox"></span><br>
+							<span class="userinfo_item_name">개인 홈페이지 주소 1</span> <input type="url" name="basic_webaddr1" class="form_textbox"><br>
+							<span class="userinfo_item_name img">개인 홈페이지 배너 1</span> <input type="file" name="basic_webbanner1" id="basic_webbanner1" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+							<span class="userinfo_item_name">개인 홈페이지 주소 2</span> <input type="url" name="basic_webaddr2" class="form_textbox"><br>
+							<span class="userinfo_item_name img">개인 홈페이지 배너 2</span> <input type="file" name="basic_webbanner2" id="basic_webbanner2" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+							<span class="userinfo_item_name">개인 홈페이지 주소 3</span> <input type="url" name="basic_webaddr3" class="form_textbox"></span><br>
+							<span class="userinfo_item_name img">개인 홈페이지 배너 3</span> <input type="file" name="basic_webbanner3" id="basic_webbanner3" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+							<span class="userinfo_item_name">트위터 계정</span> <input type="text" name="basic_contacttwitter" class="form_textbox input_nonkorean_only"></span><br>
+						</form>
+					</div>
+					</div>
+
+
+					<div id="userinfo_booth" class="userinfo_block">
+					<div id="userinfo_booth_modify_form">
+						<span class="userinfo_block_title">부스</span><a href="#" id="userinfo_modify_booth_confirm" class="userinfo_modify_btn_c">확인</a> <a href="#" id="userinfo_modify_booth_cancel" class="userinfo_modify_btn_c">취소</a><br>
+					<form id="form_modify_booth">
+						<span class="userinfo_item_name">서클명</span> <input type="text" name="circle_name" class="form_textbox"><br>
+						<span class="userinfo_item_name">대표자 외 참가자 닉네임</span> <input type="text" name="circle_nicknames" class="form_textbox"><br>
+						<span class="userinfo_item_name">부스 크기</span> <span class="userinfo_item_text" id="ui_view_mod_circle_size"></span><br>
+						<span class="userinfo_item_name">서클 성격</span> <input type="text" name="circle_contents" class="form_textbox"><br>
+						<span class="userinfo_item_name">서클 장르</span> <input type="text" name="circle_genre" class="form_textbox"><br>
+						<span class="userinfo_item_name">서클 소개</span> <textarea name="circle_info" form="form_modify_booth" rows="4" cols="50" id="form_textarea"></textarea><br>
+						<span class="userinfo_item_name">수위</span> <input type="radio" name="circle_grade" value="유" id="circle_grade_yes" class="form_radiobtn"> 유 &nbsp;&nbsp;<input type="radio" name="circle_grade" value="무" checked class="form_radiobtn"> 무<br>
+						<span class="userinfo_item_name img">서클 컷</span> <input type="file" name="circle_image" id="circle_image" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="userinfo_item_name">부스비 입금자 명</span> <input type="text" name="circle_deposit" class="form_textbox input_korean_only"><br>
+					</form>
+					</div>
+					</div>
+
+
+					<div id="userinfo_portrait" class="userinfo_block">
+					<div id="userinfo_portrait_modify_form">
+						<span class="userinfo_block_title">등신대</span><a href="#" id="userinfo_modify_portrait_confirm" class="userinfo_modify_btn_c">확인</a> <a href="#" id="userinfo_modify_portrait_cancel" class="userinfo_modify_btn_c">취소</a><br>
+					<form id="form_modify_portrait">
+						<span class="userinfo_item_name">등신대 경험</span> <span class="userinfo_item_text" id="ui_view_mod_portrait_exp"></span><br>
+						<span class="userinfo_item_name">희망 캐릭터</span> <span class="userinfo_item_text" id="ui_view_mod_portrait_desirechar"></span><br>
+						<span class="userinfo_item_name">평균 작업 시간</span> <span class="userinfo_item_text" id="ui_view_mod_portrait_avgworktime"></span><br>
+						<span class="userinfo_item_name">예상 작업 일정</span> <span class="userinfo_item_text" id="ui_view_mod_portrait_expworktime"></span><br>
+						<span class="userinfo_item_name">샘플 1</span> <input type="file" name="portrait_sample1" id="portrait_sample1" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="userinfo_item_name">샘플 2</span> <input type="file" name="portrait_sample2" id="portrait_sample2" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="userinfo_item_name">샘플 3</span> <input type="file" name="portrait_sample3" id="portrait_sample3" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="form_info_text">샘플 이미지 재 업로드시 기존 샘플 이미지는 지워집니다.</span><br>
+					</form>
+					</div>
+					</div>
+
+					<div id="userinfo_tcard" class="userinfo_block">
+					<div id="userinfo_tcard_modify_form">
+						<span class="userinfo_block_title">트레카</span><a href="#" id="userinfo_modify_tcard_confirm" class="userinfo_modify_btn_c">확인</a> <a href="#" id="userinfo_modify_tcard_cancel" class="userinfo_modify_btn_c">취소</a><br>
+					<form id="form_modify_tcard">
+						<span class="userinfo_item_name">신청 분야</span> <input type="checkbox" name="tc_typeA" value="A타입" id="tc_typeA" class="form_chbox"> A 타입 &nbsp;&nbsp;<input type="checkbox" name="tc_typeB" value="B타입" id="tc_typeB" class="form_chbox"> B 타입<br>
+						<span class="userinfo_item_name">희망 캐릭터</span> <input type="text" name="tc_desirechar" class="form_textbox"><br>
+						<span class="userinfo_item_name">평균 작업 시간</span> <span class="userinfo_item_text" id="ui_view_mod_tcard_avgworktime"></span><br>
+						<span class="userinfo_item_name">예상 작업 일정</span> <span class="userinfo_item_text" id="ui_view_mod_tcard_expworktime"></span><br>
+						<span class="userinfo_item_name">비밀번호</span> <input type="text" name="tc_password" class="form_textbox input_number_only"><br>
+						<span class="userinfo_item_name">샘플 1</span> <input type="file" name="tc_sample1" id="tc_sample1" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="userinfo_item_name">샘플 2</span> <input type="file" name="tc_sample2" id="tc_sample2" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="userinfo_item_name">샘플 3</span> <input type="file" name="tc_sample3" id="tc_sample3" class="form_filebox"> <span class="form_info_text">(한 장당 5MB 까지, jpg, jpeg, png, gif)</span><br>
+						<span class="form_info_text">샘플 이미지 재 업로드시 기존 샘플 이미지는 지워집니다.</span><br>
+					</form>
+					</div>
+					</div>
+
+					<div id="userinfo_illust" class="userinfo_block">
+					<div id="userinfo_illust_modify_form">
+						<span class="userinfo_block_title">일러스트 갤러리</span><a href="#" id="userinfo_modify_illust_confirm" class="userinfo_modify_btn_c">확인</a> <a href="#" id="userinfo_modify_illust_cancel" class="userinfo_modify_btn_c">취소</a><br>
+					<form id="form_modify_illust">
+						<span class="userinfo_item_name">참가 형태</span> <span class="userinfo_item_text" id="ui_view_mod_illust_type"></span><br>
+						<span class="userinfo_item_name">판매가 최소</span> <input type="text" name="illust_minprice" class="form_textbox input_number_only"><br>
+						<span class="userinfo_item_name">판매가 최대</span> <input type="text" name="illust_maxprice" class="form_textbox input_number_only"><br>
+						<span class="userinfo_item_name">계좌 은행명</span> <input type="text" name="illust_bankaccount" class="form_textbox"><br>
+						<span class="userinfo_item_name">계좌 번호</span> <input type="text" name="illust_accountnumber" class="form_textbox input_number_only"><br>
+						<span class="userinfo_item_name">예금주명</span> <input type="text" name="illust_accountname" class="form_textbox input_korean_only"><br>
+						<span class="userinfo_item_name">비밀번호</span> <input type="text" name="illust_password" class="form_textbox input_number_only"><br>
+					</form>
+					</div>
+					</div>
+
+
+
+
+
+
+
+
+
+				</div> <!-- end of user info box -->
+
+			</div> <!-- end of box user -->
+
+
+		</div> <!-- end of page_nami  -->
+
+
+	</div> <!-- end of page -->
+</div> <!-- end of contents -->
+
+
+<div id="errorwp">
+	<div id="errorbg"></div>
+	<div id="errorbox">
+		<div id="errorboxtext">
+			에러메세징
+		</div>
+		<a href="#" id="errorboxconfirm">확인</a>
+	</div>
+</div>
+
+
+<div id="bgthewheel"></div>
+<div id="bgthetree"></div>
+<div id="bgtrees"></div>
+<div id="copyright">
+	Copyright 2016   온리전 자급자족 주말농장
+</div>
+
+</body>
+</html>
